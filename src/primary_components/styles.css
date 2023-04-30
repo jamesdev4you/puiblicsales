@@ -1,0 +1,20 @@
+.styled-font-heading {
+  font-family: "Asap Condensed", sans-serif;
+  font-family: "Heebo", sans-serif;
+}
+
+.styled-font-p {
+  font-family: "Asap Condensed", sans-serif;
+  font-family: "Heebo", sans-serif;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+  z-index: 9999;
+}
