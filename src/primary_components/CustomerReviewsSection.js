@@ -58,8 +58,8 @@ export default function CustomerReviewsSection({ slides }) {
           style={{
             height: "747px",
             maxWidth: "40%",
-            backgroundColor: "black",
-            border: "1px solid black",
+            backgroundColor: "rgba(0,0,0, .9)",
+            border: "3px solid #DD571C",
             borderRadius: "50px",
           }}
           grabCursor

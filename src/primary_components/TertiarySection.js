@@ -171,7 +171,7 @@ export default function TertiarySection() {
           variant="contained"
           size="large"
           sx={{
-            border: "1px solid black",
+            border: "1px solid #DD571C",
             boxShadow: 0,
             color: "black",
             width: "12%",

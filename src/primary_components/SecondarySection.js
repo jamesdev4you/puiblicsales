@@ -88,7 +88,7 @@ export default function SecondarySection() {
               borderRadius: "10px",
               minWidth: "240px",
               height: "50vh",
-              border: "3px solid #CF7E7D",
+              border: "3px solid #DD571C",
               backgroundImage: `url(${Image})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -108,7 +108,7 @@ export default function SecondarySection() {
               <Card>
                 <CardContent
                   sx={{
-                    border: "3px solid #CF7E7D",
+                    border: "3px solid #DD571C",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -139,7 +139,7 @@ export default function SecondarySection() {
               <Card>
                 <CardContent
                   sx={{
-                    border: "3px solid #CF7E7D",
+                    border: "3px solid #DD571C",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -169,7 +169,7 @@ export default function SecondarySection() {
               <Card>
                 <CardContent
                   sx={{
-                    border: "3px solid #CF7E7D",
+                    border: "3px solid #DD571C",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -198,7 +198,7 @@ export default function SecondarySection() {
             variant="contained"
             size="large"
             sx={{
-              border: "1px solid black",
+              border: "1px solid #DD571C",
               boxShadow: 0,
               color: "black",
               width: "30%",
