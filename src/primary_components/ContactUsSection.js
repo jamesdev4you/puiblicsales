@@ -35,7 +35,7 @@ export default function ContactUsSection() {
     <Box
       sx={{
         width: "100%",
-        height: "100vh",
+        height: "80vh",
         background:
           "linear-gradient(to bottom, rgba(100, 27, 14, 1), rgba(100, 27, 14, .7))",
         display: "flex",
@@ -51,18 +51,17 @@ export default function ContactUsSection() {
           marginRight: "auto",
           marginLeft: "auto",
           padding: "20px 5px",
-          border: "3px solid #d4c37c",
+          border: "3px solid #DD571C",
+          background: "black",
+          borderRadius: "50px",
+          margin: "13px",
         }}
       >
-        <CardContent>
+        <CardContent sx={{ color: "white" }}>
           <Typography gutterBottom variant="h5">
             Contact Us
           </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="paragraph"
-          >
+          <Typography sx={{ paddingBottom: "15px" }}>
             Once you press submit, we will get your information and contact you
             within 24 hours!
           </Typography>
@@ -70,53 +69,61 @@ export default function ContactUsSection() {
             <Grid container spacing={2}>
               <Grid xs={12} sm={6} item>
                 <TextField
+                  sx={{
+                    backgroundColor: "white",
+                    color: "grey",
+                  }}
                   name="user_firstname"
                   label="First Name"
                   placeholder="Enter First Name"
-                  variant="outlined"
+                  variant="standard"
                   fullWidth
                   required
                 />
               </Grid>
               <Grid xs={12} sm={6} item>
                 <TextField
+                  sx={{ backgroundColor: "white" }}
                   name="user_lastname"
                   label="Last Name"
                   placeholder="Enter Last Name"
-                  variant="outlined"
+                  variant="standard"
                   fullWidth
                 />
               </Grid>
               <Grid xs={12} item>
                 <TextField
+                  sx={{ backgroundColor: "white" }}
                   type="email"
                   name="user_email"
                   label="Email"
                   placeholder="Enter email"
-                  variant="outlined"
+                  variant="standard"
                   fullWidth
                   required
                 />
               </Grid>
               <Grid xs={12} item>
                 <TextField
+                  sx={{ backgroundColor: "white" }}
                   type="number"
                   name="user_phone"
                   label="Number"
                   placeholder="Enter Phone Number"
-                  variant="outlined"
+                  variant="standard"
                   fullWidth
                   required
                 />
               </Grid>
               <Grid xs={12} item>
                 <TextField
+                  sx={{ backgroundColor: "white" }}
                   label="Message"
                   name="message"
                   multiline
                   rows={4}
                   placeholder="Enter information about your issue here"
-                  variant="outlined"
+                  variant="standard"
                   fullWidth
                   required
                 />
