@@ -201,9 +201,9 @@ export default function SecondarySection() {
             variant="contained"
             size="large"
             sx={{
-              border: "1px solid #DD571C",
+              border: "1px solid white",
               boxShadow: 0,
-              color: "black",
+              color: "white",
               width: "30%",
               minWidth: "200px",
               background: "#702321",

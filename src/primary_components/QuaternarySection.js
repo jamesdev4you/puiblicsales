@@ -103,7 +103,7 @@ export default function QuaternarySection() {
             variant="contained"
             sx={{
               color: "white",
-              border: "1px solid black",
+              border: "1px solid white",
               background: "#702321",
               "&:hover": {
                 opacity: ".8",

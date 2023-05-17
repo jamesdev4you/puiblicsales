@@ -174,9 +174,9 @@ export default function TertiarySection() {
           variant="contained"
           size="large"
           sx={{
-            border: "1px solid #DD571C",
+            border: "1px solid white",
             boxShadow: 0,
-            color: "black",
+            color: "white",
             width: "12%",
             minWidth: "250px",
             background: "#702321",
