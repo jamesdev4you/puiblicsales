@@ -1,3 +1,4 @@
+import { React, useState } from "react";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -12,11 +13,13 @@ import { useAnimation } from "framer-motion";
 import { motion } from "framer-motion";
 
 export default function TertiarySection() {
+  const [state, setState] = useState(false);
   const { ref, inView } = useInView();
   const animation = useAnimation();
 
   useEffect(() => {
     if (inView) {
+      setState(true);
       animation.start({
         x: 0,
         transition: { type: "spring", duration: 1.5, bounce: 0.3 },
@@ -24,7 +27,7 @@ export default function TertiarySection() {
     }
     if (!inView) {
       animation.start({
-        x: "-100vw",
+        x: state ? "0" : "-100vw",
       });
     }
     console.log("use effect hook, inView=", inView);

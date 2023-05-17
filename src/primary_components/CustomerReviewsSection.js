@@ -13,11 +13,13 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
 export default function CustomerReviewsSection({ slides }) {
+  const [state, setState] = useState(false);
   const { ref, inView } = useInView();
   const animation = useAnimation();
 
   useEffect(() => {
     if (inView) {
+      setState(true);
       animation.start({
         x: 0,
         transition: { type: "spring", duration: 2.3, bounce: 0.3 },
@@ -25,7 +27,7 @@ export default function CustomerReviewsSection({ slides }) {
     }
     if (!inView) {
       animation.start({
-        x: "-100vw",
+        x: state ? "0" : "-100vw",
       });
     }
     console.log("use effect hook, inView=", inView);
