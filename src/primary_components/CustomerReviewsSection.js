@@ -52,7 +52,12 @@ export default function CustomerReviewsSection({ slides }) {
         style={{ width: "100%", minWidth: "1000px", height: "100%" }}
       >
         <Typography
-          sx={{ fontSize: "38px", textAlign: "center", paddingBottom: "40px" }}
+          sx={{
+            fontSize: "38px",
+            textAlign: "center",
+            paddingBottom: "40px",
+            color: "white",
+          }}
         >
           Customer Reviews
         </Typography>

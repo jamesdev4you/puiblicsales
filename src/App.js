@@ -13,6 +13,7 @@ import personThree from "./assets/PersonThree.jpg";
 import personFour from "./assets/PersonFour.jpg";
 import personFive from "./assets/PersonFive.jpg";
 import personSix from "./assets/PersonSix.jpg";
+import Styles from "./primary_components/styles.css";
 
 const slides = [
   {
@@ -49,7 +50,7 @@ const slides = [
 
 function App() {
   return (
-    <div>
+    <div className="app--div">
       <PrimarySeciton />
       <SecondarySection />
       <TertiarySection />
