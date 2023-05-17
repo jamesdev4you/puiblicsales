@@ -37,7 +37,7 @@ export default function CustomerReviewsSection({ slides }) {
         width: "100%",
         height: "100vh",
         background:
-          "linear-gradient(to bottom, rgba(213, 124, 121, 1), rgba(231, 154, 140, .9))",
+          "linear-gradient(to bottom, rgba(118, 32, 27, 1), rgba(100, 27, 14, 1))",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -56,13 +56,16 @@ export default function CustomerReviewsSection({ slides }) {
         </Typography>
         <Swiper
           style={{
-            height: "50%",
-            width: "30%",
+            height: "747px",
+            maxWidth: "40%",
+            backgroundColor: "black",
             border: "1px solid black",
-            borderRadius: "5px",
+            borderRadius: "50px",
           }}
+          grabCursor
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
+          navigation
           slidesPerView={1}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
@@ -71,27 +74,41 @@ export default function CustomerReviewsSection({ slides }) {
           {slides.map((slide) => {
             return (
               <SwiperSlide
+                key={slide}
                 style={{
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
+                  padding: "0px",
                 }}
               >
                 <Box
                   sx={{
                     backgroundColor: "red",
-                    height: "200px",
-                    width: "200px",
+                    height: "300px",
+                    width: "300px",
+                    borderRadius: "50%",
                     backgroundImage: `url(${slide.image})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
                 ></Box>
-                <Typography>⭐⭐⭐⭐⭐</Typography>
-                <Typography>{slide.name}</Typography>
-                <Typography sx={{ width: "250px", textAlign: "center" }}>
+                <Typography sx={{ paddingTop: "20px", fontSize: "2em" }}>
+                  ⭐⭐⭐⭐⭐
+                </Typography>
+                <Typography sx={{ color: "white", fontSize: "2em" }}>
+                  {slide.name}
+                </Typography>
+                <Typography
+                  sx={{
+                    width: "250px",
+                    textAlign: "center",
+                    fontSize: "1.2em",
+                    color: "white",
+                  }}
+                >
                   {slide.desc}
                 </Typography>
               </SwiperSlide>

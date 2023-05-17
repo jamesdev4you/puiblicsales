@@ -17,7 +17,7 @@ export default function QuaternarySection() {
         width: "100%",
         height: "100vh",
         background:
-          "linear-gradient(to bottom, rgba(254, 137, 25, .8), rgba(213, 124, 121, 1))",
+          "linear-gradient(to bottom, rgba(154, 72, 4, 1),rgba(118, 32, 27, 1))",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -44,22 +44,38 @@ export default function QuaternarySection() {
           }}
         >
           <Typography
-            sx={{ textAlign: "center", fontSize: "2.0rem", fontWeight: "bold" }}
+            sx={{
+              textAlign: "center",
+              fontSize: "2.0rem",
+              fontWeight: "bold",
+              color: "white",
+            }}
           >
             With SalesBot,
           </Typography>
           <Typography
-            sx={{ textAlign: "center", fontSize: "2.0rem", fontWeight: "bold" }}
+            sx={{
+              color: "white",
+              textAlign: "center",
+              fontSize: "2.0rem",
+              fontWeight: "bold",
+            }}
           >
             lorem ipsum lorem lor
           </Typography>
           <Typography
-            sx={{ textAlign: "center", fontSize: "2.0rem", fontWeight: "bold" }}
+            sx={{
+              color: "white",
+              textAlign: "center",
+              fontSize: "2.0rem",
+              fontWeight: "bold",
+            }}
           >
             lorem ipsum lorem
           </Typography>
           <Typography
             sx={{
+              color: "white",
               textAlign: "center",
               fontSize: "1.1em",
               width: "40%",
@@ -75,18 +91,23 @@ export default function QuaternarySection() {
             id="outlined-basic"
             placeholder="Enter Email Here."
             variant="outlined"
-            sx={{ width: "70%", margin: "0", padding: "0" }}
+            sx={{
+              backgroundColor: "white",
+              color: "black",
+              width: "70%",
+              margin: "0",
+              padding: "0",
+            }}
           />
           <Button
             variant="contained"
             sx={{
-              color: "black",
-              background:
-                "linear-gradient( rgba(187, 73, 0, 0.6), rgba(240, 158, 121, 0.8))",
+              color: "white",
+              border: "1px solid black",
+              background: "#702321",
               "&:hover": {
                 opacity: ".8",
-                background:
-                  "linear-gradient( rgba(187, 73, 0, 0.4), rgba(240, 158, 121, 0.8))",
+                background: "rgba(112, 35, 33, .6)",
               },
             }}
           >
@@ -99,6 +120,7 @@ export default function QuaternarySection() {
             display: "flex",
             gap: "10px",
             marginTop: "10px",
+            color: "white",
           }}
         >
           <CheckIcon />

@@ -37,7 +37,7 @@ export default function ContactUsSection() {
         width: "100%",
         height: "100vh",
         background:
-          "linear-gradient(to bottom, rgba(231, 154, 140, .9), rgba(231, 154, 140, .9))",
+          "linear-gradient(to bottom, rgba(100, 27, 14, 1), rgba(100, 27, 14, .7))",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

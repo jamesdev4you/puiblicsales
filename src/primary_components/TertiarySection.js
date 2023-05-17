@@ -36,7 +36,7 @@ export default function TertiarySection() {
         width: "100%",
         height: "100vh",
         background:
-          "linear-gradient(to bottom, rgba(187, 73, 0, 0.6), rgba(254, 137, 25, .8))",
+          "linear-gradient(to bottom, rgba(90, 34, 7, 1), rgba(154, 72, 4, 1))",
         margin: "auto",
         display: "flex",
         flexDirection: "column",
@@ -71,6 +71,7 @@ export default function TertiarySection() {
                   alignItems: "center",
                   justifyContent: "center",
                   border: "5px solid #DD571C",
+                  backgroundColor: "rgba(13, 4, 0, 1)",
                 }}
               >
                 <CardContent
@@ -82,6 +83,7 @@ export default function TertiarySection() {
                     gap: "10px",
                     textAlign: "center",
                     paddingRight: "11%",
+                    color: "white",
                   }}
                 >
                   <AccessAlarmIcon sx={{ height: "auto", width: "11%" }} />
@@ -103,6 +105,7 @@ export default function TertiarySection() {
                   alignItems: "center",
                   justifyContent: "center",
                   border: "5px solid #DD571C",
+                  backgroundColor: "rgba(13, 4, 0, 1)",
                 }}
               >
                 <CardContent
@@ -114,6 +117,7 @@ export default function TertiarySection() {
                     gap: "10px",
                     textAlign: "center",
                     paddingRight: "11%",
+                    color: "white",
                   }}
                 >
                   <AccessAlarmIcon sx={{ height: "auto", width: "11%" }} />
@@ -134,6 +138,7 @@ export default function TertiarySection() {
                   alignItems: "center",
                   justifyContent: "center",
                   border: "5px solid #DD571C",
+                  backgroundColor: "rgba(13, 4, 0, 1)",
                 }}
               >
                 <CardContent
@@ -145,6 +150,7 @@ export default function TertiarySection() {
                     gap: "10px",
                     textAlign: "center",
                     paddingRight: "11%",
+                    color: "white",
                   }}
                 >
                   <AccessAlarmIcon
@@ -170,13 +176,10 @@ export default function TertiarySection() {
             color: "black",
             width: "12%",
             minWidth: "250px",
-            background:
-              "linear-gradient( rgba(187, 73, 0, 0.6), rgba(240, 158, 121, 0.8))",
+            background: "#702321",
             margin: "20px auto",
             "&:hover": {
-              opacity: ".8",
-              background:
-                "linear-gradient( rgba(187, 73, 0, 0.4), rgba(240, 158, 121, 0.8))",
+              background: "rgba(112, 35, 33, .6)",
             },
           }}
         >

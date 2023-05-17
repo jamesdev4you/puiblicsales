@@ -23,7 +23,7 @@ export default function PrimarySeciton() {
         backgroundImage: `url(${Image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: "bottom",
+        backgroundPosition: "center",
       }}
     >
       <motion.div

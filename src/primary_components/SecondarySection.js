@@ -45,7 +45,7 @@ export default function SecondarySection() {
         width: "100%",
         height: "auto",
         background:
-          "linear-gradient(to bottom, rgba(0, 0, 2, 1), rgba(187, 73, 0, 0.6))",
+          "linear-gradient(to bottom, rgba(0, 0, 2, 1), rgba(90, 34, 7, 1))",
         margin: "auto",
         display: "flex",
         flexDirection: "column",
@@ -115,10 +115,14 @@ export default function SecondarySection() {
                     alignItems: "center",
                     gap: "10px",
                     textAlign: "center",
+                    backgroundColor: "rgba(13, 4, 0, 1)",
                   }}
                 >
-                  <AccessAlarmIcon />
-                  <Typography className="styled-font-heading">
+                  <AccessAlarmIcon sx={{ color: "white" }} />
+                  <Typography
+                    className="styled-font-heading"
+                    sx={{ color: "white" }}
+                  >
                     More powerful than just a nudge! QuantumSMS supports
                     outbound or inbound campaigns and includes a drag and drop
                     flow-builder. Your customers are able to respond and
@@ -142,10 +146,14 @@ export default function SecondarySection() {
                     alignItems: "center",
                     gap: "10px",
                     textAlign: "center",
+                    backgroundColor: "rgba(13, 4, 0, 1)",
                   }}
                 >
-                  <AccessAlarmIcon />
-                  <Typography className="styled-font-heading">
+                  <AccessAlarmIcon sx={{ color: "white" }} />
+                  <Typography
+                    className="styled-font-heading"
+                    sx={{ color: "white" }}
+                  >
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
                     Microsoft Outlook Add-In, QuantumMail will enable your bot
@@ -168,10 +176,14 @@ export default function SecondarySection() {
                     alignItems: "center",
                     gap: "10px",
                     textAlign: "center",
+                    backgroundColor: "rgba(13, 4, 0, 1)",
                   }}
                 >
-                  <AccessAlarmIcon />
-                  <Typography className="styled-font-heading">
+                  <AccessAlarmIcon sx={{ color: "white" }} />
+                  <Typography
+                    className="styled-font-heading"
+                    sx={{ color: "white" }}
+                  >
                     Staff shortages and long hold times got you down?! Integrate
                     your IvyQuantum™ bot with the telephony system of your
                     choice and have the bot answer natural language questions
@@ -191,12 +203,11 @@ export default function SecondarySection() {
               color: "black",
               width: "30%",
               minWidth: "200px",
-              background: "linear-gradient( #CF7E7D, rgba(240, 158, 121, 0.8))",
+              background: "#702321",
               margin: "20px auto",
               "&:hover": {
                 opacity: ".8",
-                background:
-                  "linear-gradient( #CF7E7D, rgba(240, 158, 121, 0.8))",
+                background: "rgba(112, 35, 33, .6)",
               },
             }}
           >
