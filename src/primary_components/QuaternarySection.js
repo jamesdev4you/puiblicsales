@@ -78,7 +78,7 @@ export default function QuaternarySection() {
               color: "white",
               textAlign: "center",
               fontSize: "1.1em",
-              width: "40%",
+              width: "60%",
               margin: "5px 0 40px 0",
             }}
           >
