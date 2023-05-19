@@ -2,7 +2,9 @@ import { React, useState } from "react";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Image from "../assets/screen.jpg";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import BusinessIcon from "@mui/icons-material/Business";
+import LanguageIcon from "@mui/icons-material/Language";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
@@ -89,7 +91,7 @@ export default function TertiarySection() {
                     color: "white",
                   }}
                 >
-                  <AccessAlarmIcon sx={{ height: "auto", width: "11%" }} />
+                  <SupportAgentIcon sx={{ height: "auto", width: "11%" }} />
                   <Typography sx={{ fontSize: "1.2em" }}>
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
@@ -123,7 +125,7 @@ export default function TertiarySection() {
                     color: "white",
                   }}
                 >
-                  <AccessAlarmIcon sx={{ height: "auto", width: "11%" }} />
+                  <BusinessIcon sx={{ height: "auto", width: "11%" }} />
                   <Typography sx={{ fontSize: "1.2em" }}>
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
@@ -156,7 +158,7 @@ export default function TertiarySection() {
                     color: "white",
                   }}
                 >
-                  <AccessAlarmIcon
+                  <LanguageIcon
                     sx={{ height: "auto", width: "10%", minWidth: "50px" }}
                   />
                   <Typography sx={{ fontSize: "1.2em" }}>

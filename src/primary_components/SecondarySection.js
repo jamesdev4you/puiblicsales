@@ -7,6 +7,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import SpeedIcon from "@mui/icons-material/Speed";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -152,7 +154,7 @@ export default function SecondarySection() {
                     backgroundColor: "rgba(13, 4, 0, 1)",
                   }}
                 >
-                  <AccessAlarmIcon sx={{ color: "white" }} />
+                  <AttachMoneyIcon sx={{ color: "white" }} />
                   <Typography
                     className="styled-font-heading"
                     sx={{ color: "white" }}
@@ -182,7 +184,7 @@ export default function SecondarySection() {
                     backgroundColor: "rgba(13, 4, 0, 1)",
                   }}
                 >
-                  <AccessAlarmIcon sx={{ color: "white" }} />
+                  <SpeedIcon sx={{ color: "white" }} />
                   <Typography
                     className="styled-font-heading"
                     sx={{ color: "white" }}
