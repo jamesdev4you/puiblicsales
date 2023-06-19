@@ -62,13 +62,13 @@ export default function SecondarySection() {
         sx={{
           color: "white",
           textAlign: "center",
-          fontSize: "1.5rem",
+          fontSize: { xs: "30px", md: "40px", lg: "50px" },
           fontWeight: "600",
           padding: "50px 0px",
+          width: "80%",
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor
+        Lorem ipsum dolor
       </Typography>
 
       <Box

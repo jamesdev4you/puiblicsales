@@ -53,7 +53,7 @@ export default function CustomerReviewsSection({ slides }) {
       >
         <Typography
           sx={{
-            fontSize: "38px",
+            fontSize: { xs: "30px", md: "40px", lg: "50px" },
             textAlign: "center",
             paddingBottom: "40px",
             color: "white",

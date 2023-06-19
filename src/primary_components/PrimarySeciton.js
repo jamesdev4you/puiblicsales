@@ -32,7 +32,6 @@ export default function PrimarySeciton() {
         transition={{ repeat: Infinity, duration: 4 }}
       >
         <SmartToyIcon sx={{ height: "70px", width: "70px" }} />
-        {/* place your icon here. To Speed up or Slow down animation change duration in motion.div! */}
       </motion.div>
       <Typography
         className="styled-font-heading"

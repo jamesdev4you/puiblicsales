@@ -86,15 +86,40 @@ export default function QuaternarySection() {
             accusan. Sed unde omn unde omnis iste error sit.
           </Typography>
         </Box>
-        <Box sx={{ width: "60%", display: "flex", gap: "10px" }}>
+        <Box
+          sx={{
+            width: "80%",
+            display: "flex",
+            gap: "10px",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <TextField
             id="outlined-basic"
             placeholder="Enter Email Here."
-            variant="outlined"
             sx={{
-              backgroundColor: "white",
-              color: "black",
-              width: "70%",
+              "& label.Mui-focused": {
+                color: "white",
+              },
+              "& .MuiFormLabel-root": {
+                color: "white",
+              },
+              "& .MuiFormLabel-root.Mui-focused": {
+                color: "white",
+              },
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "white",
+                },
+                "&:hover fieldset": {
+                  borderColor: "white",
+                },
+              },
+              "& .MuiInputBase-root": {
+                color: "white",
+              },
+              width: "80%",
               margin: "0",
               padding: "0",
             }}
@@ -102,6 +127,8 @@ export default function QuaternarySection() {
           <Button
             variant="contained"
             sx={{
+              width: "30%",
+              height: "80%",
               color: "white",
               border: "1px solid white",
               background: "#702321",
@@ -111,7 +138,7 @@ export default function QuaternarySection() {
               },
             }}
           >
-            Sign up Free
+            Sign up
           </Button>
         </Box>
         <Box

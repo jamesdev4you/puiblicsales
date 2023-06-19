@@ -35,13 +35,13 @@ export default function ContactUsSection() {
     <Box
       sx={{
         width: "100%",
-        height: "80vh",
+        height: "100vh",
         background:
           "linear-gradient(to bottom, rgba(100, 27, 14, 1), rgba(100, 27, 14, .7))",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContant: "center",
+        justifyContent: "center",
       }}
     >
       <Card
