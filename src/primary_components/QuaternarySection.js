@@ -9,6 +9,7 @@ import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 import TextField from "@mui/material/TextField";
 import "./styles.css";
+import "../index.css";
 
 export default function QuaternarySection() {
   return (
@@ -46,9 +47,11 @@ export default function QuaternarySection() {
           <Typography
             sx={{
               textAlign: "center",
-              fontSize: "2.0rem",
+              fontSize: "2.5rem",
               fontWeight: "bold",
               color: "white",
+
+              fontFamily: "Ubuntu",
             }}
           >
             With SalesBot,
@@ -57,8 +60,9 @@ export default function QuaternarySection() {
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: "2.0rem",
+              fontSize: "2.5rem",
               fontWeight: "bold",
+              fontFamily: "Ubuntu",
             }}
           >
             lorem ipsum lorem lor
@@ -67,8 +71,9 @@ export default function QuaternarySection() {
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: "2.0rem",
+              fontSize: "2.5rem",
               fontWeight: "bold",
+              fontFamily: "Ubuntu",
             }}
           >
             lorem ipsum lorem
@@ -77,9 +82,10 @@ export default function QuaternarySection() {
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: "1.1em",
+              fontSize: "1.5em",
               width: "60%",
               margin: "5px 0 40px 0",
+              fontFamily: "Normal",
             }}
           >
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -134,7 +140,7 @@ export default function QuaternarySection() {
               background: "#702321",
               "&:hover": {
                 opacity: ".8",
-                background: "rgba(112, 35, 33, .6)",
+                background: "#5D2012",
               },
             }}
           >
@@ -143,17 +149,31 @@ export default function QuaternarySection() {
         </Box>
         <Box
           sx={{
-            width: "60%",
+            width: "80%",
             display: "flex",
-            gap: "10px",
+            flexDirection: { xs: "column", lg: "row" },
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "5px",
             marginTop: "10px",
+
             color: "white",
           }}
         >
-          <CheckIcon />
-          <Typography>14 Free Day Trial</Typography>
-          <CheckIcon />
-          <Typography>No Credit Card Needed</Typography>
+          <Typography sx={{ fontFamily: "Normal" }}>
+            <CheckIcon />
+            14 Free Day Trial
+          </Typography>
+
+          <Typography sx={{ fontFamily: "Normal" }}>
+            <CheckIcon />
+            No Credit Card Needed
+          </Typography>
+
+          <Typography sx={{ fontFamily: "Normal" }}>
+            <CheckIcon />
+            Money Back Guaranteed
+          </Typography>
         </Box>
       </Box>
       <Box

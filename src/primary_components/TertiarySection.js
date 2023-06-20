@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useEffect } from "react";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -9,31 +9,24 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { useAnimation } from "framer-motion";
-import { motion } from "framer-motion";
+import "../index.css";
+
+const squareVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 export default function TertiarySection() {
-  const [state, setState] = useState(false);
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
-      setState(true);
-      animation.start({
-        x: 0,
-        transition: { type: "spring", duration: 1.5, bounce: 0.3 },
-      });
+      controls.start("visible");
     }
-    if (!inView) {
-      animation.start({
-        x: state ? "0" : "-100vw",
-      });
-    }
-    console.log("use effect hook, inView=", inView);
-  }, [inView]);
+  }, [controls, inView]);
 
   return (
     <Box
@@ -52,7 +45,6 @@ export default function TertiarySection() {
       }}
     >
       <Box
-        ref={ref}
         sx={{
           width: "60%",
           minWidth: "450px",
@@ -66,9 +58,18 @@ export default function TertiarySection() {
           paddingBottom: "50px",
         }}
       >
-        <Grid container spacing={2} sx={{ width: "80%", height: "auto" }}>
-          <Grid item xs={12}>
-            <motion.div animate={animation}>
+        <motion.div
+          animate={controls}
+          variants={squareVariants}
+          initial="hidden"
+        >
+          <Grid
+            ref={ref}
+            container
+            spacing={2}
+            sx={{ width: "80%", height: "auto", margin: "auto" }}
+          >
+            <Grid item xs={12}>
               <Card
                 sx={{
                   height: "150px",
@@ -92,17 +93,15 @@ export default function TertiarySection() {
                   }}
                 >
                   <SupportAgentIcon sx={{ height: "auto", width: "11%" }} />
-                  <Typography sx={{ fontSize: "1.2em" }}>
+                  <Typography sx={{ fontSize: "1.2em", fontFamily: "Ubuntu" }}>
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
                   </Typography>
                 </CardContent>
               </Card>
-            </motion.div>
-          </Grid>
+            </Grid>
 
-          <Grid item xs={12}>
-            <motion.div animate={animation}>
+            <Grid item xs={12}>
               <Card
                 sx={{
                   height: "150px",
@@ -126,16 +125,14 @@ export default function TertiarySection() {
                   }}
                 >
                   <BusinessIcon sx={{ height: "auto", width: "11%" }} />
-                  <Typography sx={{ fontSize: "1.2em" }}>
+                  <Typography sx={{ fontSize: "1.2em", fontFamily: "Ubuntu" }}>
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
                   </Typography>
                 </CardContent>
               </Card>
-            </motion.div>
-          </Grid>
-          <Grid item xs={12}>
-            <motion.div animate={animation}>
+            </Grid>
+            <Grid item xs={12}>
               <Card
                 sx={{
                   height: "150px",
@@ -161,36 +158,38 @@ export default function TertiarySection() {
                   <LanguageIcon
                     sx={{ height: "auto", width: "10%", minWidth: "50px" }}
                   />
-                  <Typography sx={{ fontSize: "1.2em" }}>
+                  <Typography sx={{ fontSize: "1.2em", fontFamily: "Ubuntu" }}>
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
                   </Typography>
                 </CardContent>
               </Card>
-            </motion.div>
+            </Grid>
           </Grid>
-        </Grid>
+        </motion.div>
       </Box>
-      <motion.div animate={animation}>
-        <Button
-          variant="contained"
-          size="large"
-          sx={{
-            border: "1px solid white",
-            boxShadow: 0,
-            color: "white",
-            width: "12%",
-            minWidth: "250px",
-            background: "#702321",
-            margin: "20px auto",
-            "&:hover": {
-              background: "rgba(112, 35, 33, .6)",
-            },
-          }}
-        >
-          Begin your journey!
-        </Button>
-      </motion.div>
+
+      <Button
+        variant="contained"
+        size="large"
+        sx={{
+          border: "1px solid white",
+          boxShadow: 0,
+          color: "white",
+          width: "12%",
+          minWidth: "250px",
+          background: "#702321",
+          margin: "20px auto",
+          "&:hover": {
+            opacity: ".8",
+            background: "#5D2012",
+          },
+
+          fontFamily: "Ubuntu",
+        }}
+      >
+        Begin your journey!
+      </Button>
     </Box>
   );
 }

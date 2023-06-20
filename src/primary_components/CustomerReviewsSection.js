@@ -11,27 +11,22 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import "../index.css";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 export default function CustomerReviewsSection({ slides }) {
-  const [state, setState] = useState(false);
   const { ref, inView } = useInView();
-  const animation = useAnimation();
+  const control = useAnimation();
 
   useEffect(() => {
     if (inView) {
-      setState(true);
-      animation.start({
-        x: 0,
-        transition: { type: "spring", duration: 2.3, bounce: 0.3 },
-      });
+      control.start("visible");
     }
-    if (!inView) {
-      animation.start({
-        x: state ? "0" : "-100vw",
-      });
-    }
-    console.log("use effect hook, inView=", inView);
-  }, [inView]);
+  }, [control, inView]);
 
   return (
     <Box
@@ -40,88 +35,106 @@ export default function CustomerReviewsSection({ slides }) {
         height: "100vh",
         background:
           "linear-gradient(to bottom, rgba(118, 32, 27, 1), rgba(100, 27, 14, 1))",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContant: "center",
       }}
-      ref={ref}
     >
       <motion.div
-        animate={animation}
-        style={{ width: "100%", minWidth: "1000px", height: "100%" }}
+        ref={ref}
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}
+        className="box"
       >
-        <Typography
+        <Box
           sx={{
-            fontSize: { xs: "30px", md: "40px", lg: "50px" },
-            textAlign: "center",
-            paddingBottom: "40px",
-            color: "white",
+            width: "100%",
+            height: "100vh",
+            background:
+              "linear-gradient(to bottom, rgba(118, 32, 27, 1), rgba(100, 27, 14, 1))",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContant: "center",
           }}
         >
-          Customer Reviews
-        </Typography>
-        <Swiper
-          style={{
-            height: "747px",
-            maxWidth: "40%",
-            backgroundColor: "rgba(0,0,0, .9)",
-            border: "3px solid #DD571C",
-            borderRadius: "50px",
-          }}
-          grabCursor
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
-          navigation
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          {slides.map((slide) => {
-            return (
-              <SwiperSlide
-                key={slide}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  padding: "0px",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "red",
-                    height: "300px",
-                    width: "300px",
-                    borderRadius: "50%",
-                    backgroundImage: `url(${slide.image})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                ></Box>
-                <Typography sx={{ paddingTop: "20px", fontSize: "2em" }}>
-                  ⭐⭐⭐⭐⭐
-                </Typography>
-                <Typography sx={{ color: "white", fontSize: "2em" }}>
-                  {slide.name}
-                </Typography>
-                <Typography
-                  sx={{
-                    width: "250px",
-                    textAlign: "center",
-                    fontSize: "1.2em",
-                    color: "white",
+          <Typography
+            sx={{
+              fontSize: { xs: "30px", md: "40px", lg: "50px" },
+              textAlign: "center",
+              paddingBottom: "40px",
+              color: "white",
+              fontFamily: "Ubuntu",
+            }}
+          >
+            Customer Reviews
+          </Typography>
+          <Swiper
+            style={{
+              height: "747px",
+              maxWidth: "40%",
+              backgroundColor: "rgba(0,0,0, .9)",
+              border: "3px solid #DD571C",
+              borderRadius: "50px",
+            }}
+            grabCursor
+            modules={[Navigation, Scrollbar, A11y]}
+            spaceBetween={50}
+            navigation
+            slidesPerView={1}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            {slides.map((slide) => {
+              return (
+                <SwiperSlide
+                  key={slide}
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    padding: "0px",
                   }}
                 >
-                  {slide.desc}
-                </Typography>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+                  <Box
+                    sx={{
+                      backgroundColor: "red",
+                      height: "300px",
+                      width: "300px",
+                      borderRadius: "50%",
+                      backgroundImage: `url(${slide.image})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  ></Box>
+                  <Typography sx={{ paddingTop: "20px", fontSize: "2em" }}>
+                    ⭐⭐⭐⭐⭐
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "white",
+                      fontSize: "2em",
+                      fontFamily: "Ubuntu",
+                    }}
+                  >
+                    {slide.name}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      width: "250px",
+                      textAlign: "center",
+                      fontSize: "1.2em",
+                      color: "white",
+                      fontFamily: "Normal",
+                    }}
+                  >
+                    {slide.desc}
+                  </Typography>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </Box>
       </motion.div>
     </Box>
   );

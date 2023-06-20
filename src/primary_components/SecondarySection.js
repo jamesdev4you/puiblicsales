@@ -14,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import "./styles.css";
+import "../index.css";
 
 export default function SecondarySection() {
   const [state, setState] = useState(false);
@@ -60,6 +61,7 @@ export default function SecondarySection() {
       <Typography
         className="styled-font-heading"
         sx={{
+          fontFamily: "Ubuntu",
           color: "white",
           textAlign: "center",
           fontSize: { xs: "30px", md: "40px", lg: "50px" },
@@ -86,20 +88,22 @@ export default function SecondarySection() {
         }}
         ref={ref}
       >
-        <motion.div animate={animationPic}>
+        <motion.div
+          animate={animationPic}
+          style={{ height: "57.5vh", width: "auto" }}
+        >
           <Box
             sx={{
-              width: "16.5%",
+              width: "auto",
               borderRadius: "10px",
               minWidth: "240px",
-              height: "50vh",
+              height: "100%",
               border: "3px solid #DD571C",
               backgroundImage: `url(${Image})`,
               backgroundSize: "cover",
+              backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               borderRadius: "10px",
-              width: "100%",
-              height: "50vh",
             }}
           />
         </motion.div>
@@ -126,7 +130,7 @@ export default function SecondarySection() {
                   <AccessAlarmIcon sx={{ color: "white" }} />
                   <Typography
                     className="styled-font-heading"
-                    sx={{ color: "white" }}
+                    sx={{ color: "white", fontFamily: "Normal" }}
                   >
                     More powerful than just a nudge! QuantumSMS supports
                     outbound or inbound campaigns and includes a drag and drop
@@ -157,7 +161,7 @@ export default function SecondarySection() {
                   <AttachMoneyIcon sx={{ color: "white" }} />
                   <Typography
                     className="styled-font-heading"
-                    sx={{ color: "white" }}
+                    sx={{ color: "white", fontFamily: "Normal" }}
                   >
                     No more being buried in emails and sending inconsistent
                     information! Available as a Google Chrome Plug-In or
@@ -187,7 +191,7 @@ export default function SecondarySection() {
                   <SpeedIcon sx={{ color: "white" }} />
                   <Typography
                     className="styled-font-heading"
-                    sx={{ color: "white" }}
+                    sx={{ color: "white", fontFamily: "Normal" }}
                   >
                     Staff shortages and long hold times got you down?! Integrate
                     your IvyQuantum™ bot with the telephony system of your
@@ -210,6 +214,7 @@ export default function SecondarySection() {
               minWidth: "200px",
               background: "#702321",
               margin: "20px auto",
+              fontFamily: "Ubuntu",
               "&:hover": {
                 opacity: ".8",
                 background: "rgba(112, 35, 33, .6)",

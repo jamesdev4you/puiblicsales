@@ -4,7 +4,12 @@
   scrollbar-color: dark;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url(./fonts/Ubuntu-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Normal";
+  src: local("Ubuntu"), url(./fonts/Ubuntu-Regular.ttf) format("truetype");
 }

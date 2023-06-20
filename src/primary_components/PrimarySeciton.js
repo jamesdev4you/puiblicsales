@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import Image from "../assets/PrimaryBackground.jpg";
 import "./styles.css";
 import { motion } from "framer-motion";
+import "../index.css";
 
 export default function PrimarySeciton() {
   return (
@@ -36,6 +37,7 @@ export default function PrimarySeciton() {
       <Typography
         className="styled-font-heading"
         sx={{
+          fontFamily: "Ubuntu",
           color: "neon",
           fontSize: "2.5em",
           fontWeight: "600",
@@ -49,6 +51,7 @@ export default function PrimarySeciton() {
       <Typography
         className="styled-font-p"
         sx={{
+          fontFamily: "Ubuntu",
           fontSize: "1.5rem",
           fontWeight: "500",
           width: "30%",
@@ -64,6 +67,7 @@ export default function PrimarySeciton() {
         variant="contained"
         size="large"
         sx={{
+          fontFamily: "Ubuntu",
           color: "white",
           border: "1px solid white",
           background: "linear-gradient(#9198e5, #e66465);",
