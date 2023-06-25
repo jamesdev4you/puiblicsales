@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/puiblicsales/static/css/main.a6829a2e.css",
-    "main.js": "/puiblicsales/static/js/main.684dd252.js",
+    "main.css": "/puiblicsales/static/css/main.0cecc06f.css",
+    "main.js": "/puiblicsales/static/js/main.6f194dae.js",
     "static/media/PrimaryBackground.jpg": "/puiblicsales/static/media/PrimaryBackground.b901680c304aeabad0be.jpg",
     "static/media/PersonFour.jpg": "/puiblicsales/static/media/PersonFour.94403a2bb719f47ae7b6.jpg",
     "static/media/PersonTwo.jpg": "/puiblicsales/static/media/PersonTwo.33e03196b322e1df1569.jpg",
@@ -16,11 +16,11 @@
     "static/media/krona-one-latin-400-normal.woff2": "/puiblicsales/static/media/krona-one-latin-400-normal.2f0d0d32161acbb479ff.woff2",
     "static/media/krona-one-latin-ext-400-normal.woff2": "/puiblicsales/static/media/krona-one-latin-ext-400-normal.01120cafa274a6b13dba.woff2",
     "index.html": "/puiblicsales/index.html",
-    "main.a6829a2e.css.map": "/puiblicsales/static/css/main.a6829a2e.css.map",
-    "main.684dd252.js.map": "/puiblicsales/static/js/main.684dd252.js.map"
+    "main.0cecc06f.css.map": "/puiblicsales/static/css/main.0cecc06f.css.map",
+    "main.6f194dae.js.map": "/puiblicsales/static/js/main.6f194dae.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6829a2e.css",
-    "static/js/main.684dd252.js"
+    "static/css/main.0cecc06f.css",
+    "static/js/main.6f194dae.js"
   ]
 }
