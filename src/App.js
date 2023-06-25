@@ -18,27 +18,27 @@ import Styles from "./primary_components/styles.css";
 const slides = [
   {
     name: "Seymore Haybark",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ",
+    desc: "Chariot transformed our operations, saving us time and money!",
     image: personOne,
   },
   {
     name: "Lauren Crasp",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ",
+    desc: "With Chariot, our productivity skyrocketed, leading to impressive growth.",
     image: personTwo,
   },
   {
     name: "Jason Rasper",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ",
+    desc: "Thanks to Chariot, our customer satisfaction reached new heights!",
     image: personThree,
   },
   {
     name: "Mason Dudley",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ",
+    desc: "Chariot's automation capabilities helped us scale our business effortlessly. ",
     image: personFour,
   },
   {
     name: "Zach Crisp",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ",
+    desc: "Chariot's insights and efficiency propelled our business to new horizons!",
     image: personFive,
   },
   {

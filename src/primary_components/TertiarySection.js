@@ -72,7 +72,7 @@ export default function TertiarySection() {
             <Grid item xs={12}>
               <Card
                 sx={{
-                  height: "150px",
+                  height: "auto",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -86,16 +86,22 @@ export default function TertiarySection() {
                     flexDirection: "row",
                     justifyContent: "center",
                     alignItems: "center",
-                    gap: "10px",
+                    gap: "20px",
                     textAlign: "center",
                     paddingRight: "11%",
                     color: "white",
                   }}
                 >
                   <SupportAgentIcon sx={{ height: "auto", width: "11%" }} />
-                  <Typography sx={{ fontSize: "1.2em", fontFamily: "Ubuntu" }}>
-                    No more being buried in emails and sending inconsistent
-                    information! Available as a Google Chrome Plug-In or
+                  <Typography
+                    sx={{
+                      textAlign: "left",
+                      fontSize: "1em",
+                      fontFamily: "Ubuntu",
+                    }}
+                  >
+                    Chariot offers exceptional customer service support with its
+                    unparalleled assistance and efficiency.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -104,7 +110,7 @@ export default function TertiarySection() {
             <Grid item xs={12}>
               <Card
                 sx={{
-                  height: "150px",
+                  height: "auto",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -118,16 +124,22 @@ export default function TertiarySection() {
                     flexDirection: "row",
                     justifyContent: "center",
                     alignItems: "center",
-                    gap: "10px",
+                    gap: "20px",
                     textAlign: "center",
                     paddingRight: "11%",
                     color: "white",
                   }}
                 >
                   <BusinessIcon sx={{ height: "auto", width: "11%" }} />
-                  <Typography sx={{ fontSize: "1.2em", fontFamily: "Ubuntu" }}>
-                    No more being buried in emails and sending inconsistent
-                    information! Available as a Google Chrome Plug-In or
+                  <Typography
+                    sx={{
+                      textAlign: "left",
+                      fontSize: "1em",
+                      fontFamily: "Ubuntu",
+                    }}
+                  >
+                    Chariot provides invaluable support and driving success
+                    through its efficiency and automation.
                   </Typography>
                 </CardContent>
               </Card>
@@ -135,7 +147,7 @@ export default function TertiarySection() {
             <Grid item xs={12}>
               <Card
                 sx={{
-                  height: "150px",
+                  height: "auto",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -149,7 +161,7 @@ export default function TertiarySection() {
                     flexDirection: "row",
                     justifyContent: "center",
                     alignItems: "center",
-                    gap: "10px",
+                    gap: "20px",
                     textAlign: "center",
                     paddingRight: "11%",
                     color: "white",
@@ -158,9 +170,15 @@ export default function TertiarySection() {
                   <LanguageIcon
                     sx={{ height: "auto", width: "10%", minWidth: "50px" }}
                   />
-                  <Typography sx={{ fontSize: "1.2em", fontFamily: "Ubuntu" }}>
-                    No more being buried in emails and sending inconsistent
-                    information! Available as a Google Chrome Plug-In or
+                  <Typography
+                    sx={{
+                      fontSize: "1em",
+                      fontFamily: "Ubuntu",
+                      textAlign: "left",
+                    }}
+                  >
+                    Chariot offers exceptional customer service support with its
+                    unparalleled assistance and efficiency.
                   </Typography>
                 </CardContent>
               </Card>

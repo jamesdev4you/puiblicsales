@@ -70,7 +70,7 @@ export default function CustomerReviewsSection({ slides }) {
           <Swiper
             style={{
               height: "747px",
-              maxWidth: "40%",
+              maxWidth: "90%",
               backgroundColor: "rgba(0,0,0, .9)",
               border: "3px solid #DD571C",
               borderRadius: "50px",

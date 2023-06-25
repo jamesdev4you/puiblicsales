@@ -46,7 +46,7 @@ export default function PrimarySeciton() {
           minWidth: "400px",
         }}
       >
-        Connect, Profit, & Save with Salesbot
+        Connect, Profit, & Save with Chariot
       </Typography>
       <Typography
         className="styled-font-p"

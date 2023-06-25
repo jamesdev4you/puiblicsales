@@ -70,7 +70,7 @@ export default function SecondarySection() {
           width: "80%",
         }}
       >
-        Lorem ipsum dolor
+        Benefits of Chariots Adaptability
       </Typography>
 
       <Box
@@ -132,12 +132,10 @@ export default function SecondarySection() {
                     className="styled-font-heading"
                     sx={{ color: "white", fontFamily: "Normal" }}
                   >
-                    More powerful than just a nudge! QuantumSMS supports
-                    outbound or inbound campaigns and includes a drag and drop
-                    flow-builder. Your customers are able to respond and
-                    communicate with either the bot or engage with a live agent
-                    in a 1:1 SMS exchange to get the answers they need in the
-                    palm of their hand.
+                    Chariot, the AI bot, streamlines processes, integrates with
+                    systems, analyzes data, and responds quickly, saving
+                    businesses time and improving efficiency with its automation
+                    capabilities.
                   </Typography>
                 </CardContent>
               </Card>
@@ -163,11 +161,10 @@ export default function SecondarySection() {
                     className="styled-font-heading"
                     sx={{ color: "white", fontFamily: "Normal" }}
                   >
-                    No more being buried in emails and sending inconsistent
-                    information! Available as a Google Chrome Plug-In or
-                    Microsoft Outlook Add-In, QuantumMail will enable your bot
-                    to read inbound emails and draft responses using the
-                    knowledge within your bot's brain.
+                    Chariot, the innovative AI bot, revolutionizes businesses by
+                    automating tasks, streamlining processes, and improving
+                    productivity, ultimately increasing profitability and
+                    driving financial success for organizations.
                   </Typography>
                 </CardContent>
               </Card>
@@ -193,10 +190,11 @@ export default function SecondarySection() {
                     className="styled-font-heading"
                     sx={{ color: "white", fontFamily: "Normal" }}
                   >
-                    Staff shortages and long hold times got you down?! Integrate
-                    your IvyQuantum™ bot with the telephony system of your
-                    choice and have the bot answer natural language questions
-                    via phone.
+                    Chariot, the remarkable AI bot, impresses with its
+                    lightning-fast speed, unwavering consistency, and
+                    user-friendly interface, providing businesses with an
+                    exceptional tool that is both efficient and effortless to
+                    utilize.
                   </Typography>
                 </CardContent>
               </Card>

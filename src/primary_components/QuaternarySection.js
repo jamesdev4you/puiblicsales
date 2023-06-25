@@ -54,7 +54,7 @@ export default function QuaternarySection() {
               fontFamily: "Ubuntu",
             }}
           >
-            With SalesBot,
+            With Chariot,
           </Typography>
           <Typography
             sx={{
@@ -65,7 +65,7 @@ export default function QuaternarySection() {
               fontFamily: "Ubuntu",
             }}
           >
-            lorem ipsum lorem lor
+            growing quickly at low
           </Typography>
           <Typography
             sx={{
@@ -76,7 +76,7 @@ export default function QuaternarySection() {
               fontFamily: "Ubuntu",
             }}
           >
-            lorem ipsum lorem
+            costs is now possible!
           </Typography>
           <Typography
             sx={{
@@ -88,8 +88,9 @@ export default function QuaternarySection() {
               fontFamily: "Normal",
             }}
           >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusan. Sed unde omn unde omnis iste error sit.
+            Sign up for a quick Demo and to get in contact with our team! We
+            will supply you with a short trial that will allow you to try out
+            Chariot to your hearts content!
           </Typography>
         </Box>
         <Box
