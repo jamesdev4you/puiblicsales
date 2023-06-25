@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/puiblicsales/static/css/main.0cecc06f.css",
-    "main.js": "/puiblicsales/static/js/main.6f194dae.js",
-    "static/media/PrimaryBackground.jpg": "/puiblicsales/static/media/PrimaryBackground.b901680c304aeabad0be.jpg",
-    "static/media/PersonFour.jpg": "/puiblicsales/static/media/PersonFour.94403a2bb719f47ae7b6.jpg",
-    "static/media/PersonTwo.jpg": "/puiblicsales/static/media/PersonTwo.33e03196b322e1df1569.jpg",
-    "static/media/PersonThree.jpg": "/puiblicsales/static/media/PersonThree.817c4b8bbae7f1946560.jpg",
-    "static/media/PersonSix.jpg": "/puiblicsales/static/media/PersonSix.5d6b68904915c8913795.jpg",
-    "static/media/PersonFive.jpg": "/puiblicsales/static/media/PersonFive.e1304ea6d82a554dbd8b.jpg",
-    "static/media/Ubuntu-Regular.ttf": "/puiblicsales/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
-    "static/media/Ubuntu-Bold.ttf": "/puiblicsales/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
-    "static/media/screen.jpg": "/puiblicsales/static/media/screen.dc3dd7a879eba63e8317.jpg",
-    "static/media/PersonOne.jpg": "/puiblicsales/static/media/PersonOne.009aeb326c9abe486821.jpg",
-    "static/media/krona-one-all-400-normal.woff": "/puiblicsales/static/media/krona-one-all-400-normal.1f9bd8e086aac3b91fe7.woff",
-    "static/media/krona-one-latin-400-normal.woff2": "/puiblicsales/static/media/krona-one-latin-400-normal.2f0d0d32161acbb479ff.woff2",
-    "static/media/krona-one-latin-ext-400-normal.woff2": "/puiblicsales/static/media/krona-one-latin-ext-400-normal.01120cafa274a6b13dba.woff2",
-    "index.html": "/puiblicsales/index.html",
-    "main.0cecc06f.css.map": "/puiblicsales/static/css/main.0cecc06f.css.map",
-    "main.6f194dae.js.map": "/puiblicsales/static/js/main.6f194dae.js.map"
+    "main.css": "/static/css/main.d82c930d.css",
+    "main.js": "/static/js/main.0f0b726d.js",
+    "static/media/PrimaryBackground.jpg": "/static/media/PrimaryBackground.b901680c304aeabad0be.jpg",
+    "static/media/PersonFour.jpg": "/static/media/PersonFour.94403a2bb719f47ae7b6.jpg",
+    "static/media/PersonTwo.jpg": "/static/media/PersonTwo.33e03196b322e1df1569.jpg",
+    "static/media/PersonThree.jpg": "/static/media/PersonThree.817c4b8bbae7f1946560.jpg",
+    "static/media/PersonSix.jpg": "/static/media/PersonSix.5d6b68904915c8913795.jpg",
+    "static/media/PersonFive.jpg": "/static/media/PersonFive.e1304ea6d82a554dbd8b.jpg",
+    "static/media/Ubuntu-Regular.ttf": "/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/screen.jpg": "/static/media/screen.dc3dd7a879eba63e8317.jpg",
+    "static/media/PersonOne.jpg": "/static/media/PersonOne.009aeb326c9abe486821.jpg",
+    "static/media/krona-one-all-400-normal.woff": "/static/media/krona-one-all-400-normal.1f9bd8e086aac3b91fe7.woff",
+    "static/media/krona-one-latin-400-normal.woff2": "/static/media/krona-one-latin-400-normal.2f0d0d32161acbb479ff.woff2",
+    "static/media/krona-one-latin-ext-400-normal.woff2": "/static/media/krona-one-latin-ext-400-normal.01120cafa274a6b13dba.woff2",
+    "index.html": "/index.html",
+    "main.d82c930d.css.map": "/static/css/main.d82c930d.css.map",
+    "main.0f0b726d.js.map": "/static/js/main.0f0b726d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cecc06f.css",
-    "static/js/main.6f194dae.js"
+    "static/css/main.d82c930d.css",
+    "static/js/main.0f0b726d.js"
   ]
 }
