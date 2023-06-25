@@ -68,13 +68,7 @@ export default function CustomerReviewsSection({ slides }) {
             Customer Reviews
           </Typography>
           <Swiper
-            style={{
-              height: "747px",
-              maxWidth: "90%",
-              backgroundColor: "rgba(0,0,0, .9)",
-              border: "3px solid #DD571C",
-              borderRadius: "50px",
-            }}
+            className="Jimbo"
             grabCursor
             modules={[Navigation, Scrollbar, A11y]}
             spaceBetween={50}

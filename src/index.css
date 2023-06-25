@@ -13,3 +13,18 @@
   font-family: "Normal";
   src: local("Ubuntu"), url(./fonts/Ubuntu-Regular.ttf) format("truetype");
 }
+
+.Jimbo {
+  height: 747px;
+  width: 40%;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 3px solid #dd571c;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1250px) {
+  .Jimbo {
+    width: 90%;
+  }
+}

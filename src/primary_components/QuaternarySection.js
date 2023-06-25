@@ -54,7 +54,7 @@ export default function QuaternarySection() {
               fontFamily: "Ubuntu",
             }}
           >
-            With Chariot,
+            Chariot provides
           </Typography>
           <Typography
             sx={{
@@ -65,7 +65,7 @@ export default function QuaternarySection() {
               fontFamily: "Ubuntu",
             }}
           >
-            growing quickly at low
+            exponential growth
           </Typography>
           <Typography
             sx={{
@@ -76,14 +76,14 @@ export default function QuaternarySection() {
               fontFamily: "Ubuntu",
             }}
           >
-            costs is now possible!
+            at low costs!
           </Typography>
           <Typography
             sx={{
               color: "white",
               textAlign: "center",
               fontSize: "1.5em",
-              width: "60%",
+              width: "90%",
               margin: "5px 0 40px 0",
               fontFamily: "Normal",
             }}
