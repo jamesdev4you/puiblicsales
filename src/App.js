@@ -14,6 +14,7 @@ import personFour from "./assets/PersonFour.jpg";
 import personFive from "./assets/PersonFive.jpg";
 import personSix from "./assets/PersonSix.jpg";
 import Styles from "./primary_components/styles.css";
+import { Box } from "@mui/material";
 
 const slides = [
   {
@@ -50,14 +51,14 @@ const slides = [
 
 function App() {
   return (
-    <div className="app--div">
+    <>
       <PrimarySeciton />
       <SecondarySection />
       <TertiarySection />
       <QuaternarySection />
       <CustomerReviewsSection slides={slides} />
       <ContactUsSection />
-    </div>
+    </>
   );
 }
 

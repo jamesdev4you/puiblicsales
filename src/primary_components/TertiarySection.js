@@ -46,8 +46,8 @@ export default function TertiarySection() {
     >
       <Box
         sx={{
-          width: "60%",
-          minWidth: "450px",
+          width: { sm: "100%", lg: "80%" },
+
           height: "auto",
           display: "flex",
           flexWrap: "wrap",

@@ -27,9 +27,8 @@ export default function QuaternarySection() {
     >
       <Box
         sx={{
-          width: "40%",
+          width: { xs: "90%", md: "100%" },
           height: "50vh",
-          minWidth: "450px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -47,7 +46,7 @@ export default function QuaternarySection() {
           <Typography
             sx={{
               textAlign: "center",
-              fontSize: "2.5rem",
+              fontSize: "34px",
               fontWeight: "bold",
               color: "white",
 
@@ -60,7 +59,7 @@ export default function QuaternarySection() {
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: "2.5rem",
+              fontSize: "34px",
               fontWeight: "bold",
               fontFamily: "Ubuntu",
             }}
@@ -71,7 +70,7 @@ export default function QuaternarySection() {
             sx={{
               color: "white",
               textAlign: "center",
-              fontSize: "2.5rem",
+              fontSize: "34px",
               fontWeight: "bold",
               fontFamily: "Ubuntu",
             }}
@@ -88,14 +87,12 @@ export default function QuaternarySection() {
               fontFamily: "Normal",
             }}
           >
-            Sign up for a quick Demo and to get in contact with our team! We
-            will supply you with a short trial that will allow you to try out
-            Chariot to your hearts content!
+            Sign up for a quick Demo and to get in contact with our team!
           </Typography>
         </Box>
         <Box
           sx={{
-            width: "80%",
+            width: { xs: "100%", md: "40%" },
             display: "flex",
             gap: "10px",
             justifyContent: "center",
@@ -134,7 +131,7 @@ export default function QuaternarySection() {
           <Button
             variant="contained"
             sx={{
-              width: "30%",
+              width: "40%",
               height: "80%",
               color: "white",
               border: "1px solid white",

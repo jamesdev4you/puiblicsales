@@ -60,6 +60,7 @@ export default function ContactUsSection() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        margin: "auto",
       }}
     >
       <motion.div animate={controls} variants={squareVariants} initial="hidden">
