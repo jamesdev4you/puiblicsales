@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d82c930d.css",
-    "main.js": "/static/js/main.0f0b726d.js",
+    "main.js": "/static/js/main.e9f3ba06.js",
     "static/media/PrimaryBackground.jpg": "/static/media/PrimaryBackground.b901680c304aeabad0be.jpg",
     "static/media/PersonFour.jpg": "/static/media/PersonFour.94403a2bb719f47ae7b6.jpg",
     "static/media/PersonTwo.jpg": "/static/media/PersonTwo.33e03196b322e1df1569.jpg",
@@ -17,10 +17,10 @@
     "static/media/krona-one-latin-ext-400-normal.woff2": "/static/media/krona-one-latin-ext-400-normal.01120cafa274a6b13dba.woff2",
     "index.html": "/index.html",
     "main.d82c930d.css.map": "/static/css/main.d82c930d.css.map",
-    "main.0f0b726d.js.map": "/static/js/main.0f0b726d.js.map"
+    "main.e9f3ba06.js.map": "/static/js/main.e9f3ba06.js.map"
   },
   "entrypoints": [
     "static/css/main.d82c930d.css",
-    "static/js/main.0f0b726d.js"
+    "static/js/main.e9f3ba06.js"
   ]
 }
